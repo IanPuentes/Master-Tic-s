@@ -23,16 +23,31 @@
   position: absolute; /* Cambiado de fixed a absolute */
   top: 260px; /* Ajusta la posición vertical del logo */
 }
+/* Navbar */
 .navbar {
-    background-image: url('img/Lineas.png'); 
-    background-size: cover;
-     padding-top: 10px;
-     padding-bottom: 10px;
-    font-size: 18px; 
-  }
+  background-image: url('img/Lineas.png'); 
+  background-size: cover;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px; 
+  color: white; /* Cambio de color del texto de la barra de navegación */
+}
+
+/* Navbar links */
 .navbar-nav .nav-link {
-    margin-right: 15px; 
+  margin-right: 15px; 
+  color: white !important; /* Forzar el color del texto a blanco */
+}
+
+/* Ajustes para hacer la página responsive */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    color: black !important; /* Restaurar el color del texto a negro para dispositivos pequeños */
   }
+}
+.navbar-toggler-icon {
+  background-color: white; /* Cambio de color del icono del botón del menú */
+}
 .seccion {
         margin-top: 200px; 
       }
@@ -45,7 +60,7 @@
         left: 100%; 
         transition: left 4s ease, opacity 2s ease; 
         opacity: 0; 
-        background-color: black; 
+        background-color: #001f3f; 
         color: white; 
         padding: 20px;
         margin-top: 20px;
@@ -59,3 +74,22 @@
         opacity: 0;
         transition: opacity 0.5s ease;
       }
+      .seccion-productos, .seccion-servicios {
+        background-color: #001f3f;
+        text-align: center;
+        padding: 20px 0;
+      }
+      .productos-grid, .servicios-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+      }
+      .producto, .servicio {
+        background-color: #fff; /* Color de fondo de los elementos */
+        padding: 20px;
+        border-radius: 5px;
+      }
+      .titulo {
+        color: white;
+      }
+     
