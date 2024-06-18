@@ -1,15 +1,15 @@
 .spinner-wrapper {
   background-color: black;
   position: fixed;
-  top: 50px; /* Ajusta la posición vertical según sea necesario */
+  top: 50px; 
   left: 0;
   width: 100%;
-  height: calc(100% - 50px); /* Ajusta la altura menos el desplazamiento */
+  height: calc(100% - 50px); 
   z-index: 9999;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 3s;
+  transition: all 3.8s;
 }
 
 .spinner-border {
@@ -18,35 +18,35 @@
 }
 
 .logo {
-  width: 150px; /* Ajusta el tamaño del logo según sea necesario */
-  margin-bottom: 20px; /* Espacio entre el logo y el spinner */
-  position: absolute; /* Cambiado de fixed a absolute */
-  top: 260px; /* Ajusta la posición vertical del logo */
+  width: 150px; 
+  margin-bottom: 20px; 
+  position: absolute; 
+  top: 260px; 
 }
-/* Navbar */
+
 .navbar {
   background-image: url('img/Lineas.png'); 
   background-size: cover;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 18px; 
-  color: white; /* Cambio de color del texto de la barra de navegación */
+  color: white; 
 }
 
-/* Navbar links */
+
 .navbar-nav .nav-link {
   margin-right: 15px; 
-  color: white !important; /* Forzar el color del texto a blanco */
+  color: white !important; 
 }
 
-/* Ajustes para hacer la página responsive */
+
 @media (max-width: 768px) {
   .navbar-nav .nav-link {
-    color: black !important; /* Restaurar el color del texto a negro para dispositivos pequeños */
+    color: rgb(255, 255, 255) !important; 
   }
 }
 .navbar-toggler-icon {
-  background-color: white; /* Cambio de color del icono del botón del menú */
+  color: white; 
 }
 .seccion {
         margin-top: 200px; 
@@ -56,24 +56,11 @@
         height: auto;
       }
       .nueva-seccion {
-        position: relative;
-        left: 100%; 
-        transition: left 4s ease, opacity 2s ease; 
-        opacity: 0; 
-        background-color: #001f3f; 
-        color: white; 
-        padding: 20px;
-        margin-top: 20px;
+        color: #fff;
+        background-color: #001f3f;
+        padding: 30px; 
     }
-    
-    .visible {
-        left: 0; 
-        opacity: 1; 
-    }
-      .hidden {
-        opacity: 0;
-        transition: opacity 0.5s ease;
-      }
+  
       .seccion-productos, .seccion-servicios {
         background-color: #001f3f;
         text-align: center;
@@ -85,11 +72,24 @@
         grid-gap: 20px;
       }
       .producto, .servicio {
-        background-color: #fff; /* Color de fondo de los elementos */
+        background-color: #fff; 
         padding: 20px;
         border-radius: 5px;
       }
       .titulo {
         color: white;
+      }
+
+      .footer {
+        background-image: url('img/footer.png'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white; 
+        padding: 20px; 
+      }
+      .dark-mode {
+        background-color: #222;
+        color: #fff;
       }
      
