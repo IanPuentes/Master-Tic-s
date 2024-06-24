@@ -1,15 +1,19 @@
+body{
+  overflow-x:hidden ;
+  background-image:url(img/collage.png) ;
+}
 .spinner-wrapper {
-  background-color: black;
   position: fixed;
-  top: 50px; 
+  top: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 50px); 
-  z-index: 9999;
+  height: 100%;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 3.8s;
+  z-index: 9999;
+  transition: opacity 3.8s;
 }
 
 .spinner-border {
@@ -49,47 +53,139 @@
   color: white; 
 }
 .seccion {
-        margin-top: 200px; 
+        margin-top: 20px; 
+        margin-bottom: 20px;
       }
 .navbar-brand img {
         max-width: 80px; 
         height: auto;
       }
-      .nueva-seccion {
-        color: #fff;
-        background-color: #001f3f;
-        padding: 30px; 
-    }
+      .banner-section {
+        position: relative;
+        z-index: 2; 
+        background-color: rgba(255, 255, 255, 0.9); 
+        padding: 20px; 
+        text-align: center; 
+        margin-right: 75px;;
+        margin-left: 75px;
+        margin-top: 25px;
+      }
+      
+      .banner-item {
+        height: 200px; 
+        margin-bottom: 20px; 
+        background-size: cover; 
+        background-position: center; 
+        color: #000; 
+        padding: 20px; 
+        box-sizing: border-box; 
+      }
+
+
+    .carousel-item:nth-child(1) {
+  background-image: url('img/mision.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;  
+  min-height: 400px;
+  max-width: 1920px;
+  color: #fff;
+  border-radius: 10px;
   
-      .seccion-productos, .seccion-servicios {
+  
+}
+
+.carousel-item:nth-child(2) {
+  background-image: url('img/vision.png');
+  background-repeat: no-repeat;
+  background-size: cover;  
+  min-height: 400px;
+  max-width: 1920px;
+  padding-top: 60px;
+  color: #fff;
+  border-radius: 10px;
+  
+}
+
+.carousel-item:nth-child(3) {
+  background-image: url('img/valores.png');
+  background-repeat: no-repeat;
+  background-size: cover;  
+  min-height: 400px;
+  max-width: 1920px;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  
+}
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; /* Ajusta el índice z para estar sobre el contenido */
+}
+
+.carousel-control-prev {
+  left: 20px; /* Ajusta la posición izquierda según sea necesario */
+}
+
+.carousel-control-next {
+  right: 20px; /* Ajusta la posición derecha según sea necesario */
+}
+
+.seccion-productos, .seccion-servicios {
         background-color: #001f3f;
         text-align: center;
-        padding: 20px 0;
+        padding: 30px;
+        
       }
-      .productos-grid, .servicios-grid {
+.productos-grid, .servicios-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 20px;
+        padding-bottom: 10px;
       }
-      .producto, .servicio {
-        background-color: #fff; 
+.producto, .servicio {
+        background-color: #ffffff; 
         padding: 20px;
         border-radius: 5px;
       }
-      .titulo {
+.titulo {
         color: white;
       }
 
-      .footer {
+.footer {
         background-image: url('img/footer.png'); 
-        background-size: cover;
+        background-size: fill;
         background-position: center;
         background-repeat: no-repeat;
         color: white; 
         padding: 20px; 
       }
-      .dark-mode {
+.dark-mode {
         background-color: #222;
         color: #fff;
       }
-     
+
+#scrollBtn {
+        display: none; 
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999; 
+        width: 40px;
+        height: 40px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: opacity 105s, visibility 1s;
+        background-image: url('img/flecha.png'); 
+        background-size: cover; 
+      }
+      
+      
+.dark-mode #scrollBtn {
+        background-color: #343a40;
+      }

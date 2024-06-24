@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
     }, 3800)
 });
 document.addEventListener('DOMContentLoaded', function() {
-  var myCarousel = document.getElementById('mision-vision-valores');
+  var myCarousel = document.getElementById('nosotros');
   var carousel = new bootstrap.Carousel(myCarousel, {
     interval: 2000, 
     pause: 'hover', // Pausa el carrusel al pasar el mouse sobre él
@@ -33,3 +33,19 @@ window.addEventListener('load', function() {
     document.getElementById('modoOscuroSwitch').checked = true;
   }
 });
+window.addEventListener('scroll', function() {
+  var scrollBtn = document.getElementById('scrollBtn');
+  if (document.documentElement.scrollTop > 100) {
+    scrollBtn.style.display = 'block';
+  } else {
+    scrollBtn.style.display = 'none';
+  }
+});
+
+// Función para desplazar la página al principio
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
