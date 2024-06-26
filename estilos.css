@@ -5,7 +5,10 @@ body{
   background-attachment:fixed;
   background-size: cover;
   opacity: .9;
+  font-family: 'Share Tech', sans-serif;
+ 
 }
+
 .spinner-wrapper {
   position: fixed;
   top: 0;
@@ -45,6 +48,7 @@ body{
 .navbar-nav .nav-link {
   margin-right: 15px; 
   color: white !important; 
+  font-family: 'Share Tech Mono', monospace !important;
 }
 
 
@@ -57,8 +61,8 @@ body{
   color: white; 
 }
 .seccion {
-        margin-top: 20px; 
-        margin-bottom: 20px;
+        margin-top: 40px; 
+        margin-bottom: 40px;
       }
 .navbar-brand img {
         max-width: 80px; 
@@ -87,19 +91,20 @@ body{
 
 
     .carousel-item:nth-child(1) {
-  background-image: url('img/mision.jpeg');
+  background-image: url('img/mision.jpg');
   background-repeat: no-repeat;
   background-size: cover;  
   min-height: 400px;
   max-width: 1920px;
   color: #fff;
   border-radius: 10px;
+  text-align: left;
   
   
 }
 
 .carousel-item:nth-child(2) {
-  background-image: url('img/vision.png');
+  background-image: url('img/vision.jpg');
   background-repeat: no-repeat;
   background-size: cover;  
   min-height: 400px;
@@ -107,6 +112,7 @@ body{
   padding-top: 60px;
   color: #fff;
   border-radius: 10px;
+  text-align: left;
   
 }
 
@@ -116,9 +122,10 @@ body{
   background-size: cover;  
   min-height: 400px;
   max-width: 1920px;
-  text-align: center;
+  text-align: justify;
   color: #fff;
   border-radius: 10px;
+
   
 }
 .carousel-control-prev,
@@ -126,15 +133,15 @@ body{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10; /* Ajusta el índice z para estar sobre el contenido */
+  z-index: 10; 
 }
 
 .carousel-control-prev {
-  left: 20px; /* Ajusta la posición izquierda según sea necesario */
+  left: 20px; 
 }
 
 .carousel-control-next {
-  right: 20px; /* Ajusta la posición derecha según sea necesario */
+  right: 20px; 
 }
 
 .seccion-productos, .seccion-servicios {
@@ -169,6 +176,7 @@ body{
 .dark-mode {
         background-color: #222;
         color: #fff;
+        background-image: url('img/fondoMO.jpg'); 
       }
 
 #scrollBtn {

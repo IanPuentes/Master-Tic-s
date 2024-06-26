@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var myCarousel = document.getElementById('nosotros');
   var carousel = new bootstrap.Carousel(myCarousel, {
     interval: 2000, 
-    pause: 'hover', // Pausa el carrusel al pasar el mouse sobre él
+    pause: 'hover', 
   });
 });
 function toggleDarkMode() {
@@ -25,7 +25,7 @@ function toggleDarkMode() {
   }
 }
 
-// Verifica el estado del modo oscuro al cargar la página
+
 window.addEventListener('load', function() {
   var darkMode = localStorage.getItem('darkMode');
   if (darkMode === 'enabled') {
@@ -42,7 +42,7 @@ window.addEventListener('scroll', function() {
   }
 });
 
-// Función para desplazar la página al principio
+
 function scrollToTop() {
   window.scrollTo({
     top: 0,
