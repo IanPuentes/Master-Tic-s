@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
 
     setTimeout(()=>{
         spinnerWrapperEl.style.display='none';
-    }, 3800)
+    }, 1000)
 });
 document.addEventListener('DOMContentLoaded', function() {
   var myCarousel = document.getElementById('nosotros');
@@ -49,3 +49,23 @@ function scrollToTop() {
     behavior: 'smooth'
   });
 }
+function ajustarDesplazamiento() {
+  const navbarHeight = document.querySelector('.navbar').offsetHeight;
+  const links = document.querySelectorAll('.navbar-nav a.nav-link');
+
+  links.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1); 
+      const targetSection = document.getElementById(targetId);
+      const offsetTop = targetSection.offsetTop - navbarHeight;
+
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', ajustarDesplazamiento);
