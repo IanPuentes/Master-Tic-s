@@ -89,10 +89,7 @@ body{
         box-sizing: border-box; 
       }
 
-.carousel-item{
-min-height: 400px;
-max-width: 100%;
-}
+
     .carousel-item:nth-child(1) {
   background-image: url('img/mision.jpg');
   background-repeat: no-repeat;
@@ -101,7 +98,7 @@ max-width: 100%;
   max-width: 1920px;
   color: #fff;
   border-radius: 10px;
-  text-align: left;
+  text-align: justify;
   
   
 }
@@ -112,10 +109,9 @@ max-width: 100%;
   background-size: cover;  
   min-height: 400px;
   max-width: 1920px;
-  padding-top: 60px;
   color: #fff;
   border-radius: 10px;
-  text-align: left;
+  text-align: justify;
   
 }
 
@@ -138,13 +134,8 @@ max-width: 100%;
   transform: translateY(-50%);
   z-index: 10; 
 }
-
-.carousel-control-prev {
-  left: 20px; 
-}
-
-.carousel-control-next {
-  right: 20px; 
+.mision, .vision, .valores{
+  text-align: center;
 }
 
 .seccion-productos, .seccion-servicios {
@@ -155,11 +146,14 @@ max-width: 100%;
       }
       .productos-grid, .servicios-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 110px;
+        justify-items: center; 
         padding-bottom: 20px;
-        /* Adjust card width and other styles for responsiveness */
+        margin: 0 auto; 
+        max-width: 1200px; 
       }
+
 .producto, .servicio {
         background-color: #ffffff; 
         padding: 20px;
@@ -172,7 +166,7 @@ max-width: 100%;
 .footer {
         background-image: url('img/footer.png'); 
         background-size: fill;
-        background-position: center;
+        background-position: left;
         background-repeat: no-repeat;
         color: white; 
         padding: 20px; 
@@ -204,4 +198,20 @@ max-width: 100%;
       
 .dark-mode #scrollBtn {
         background-color: #343a40;
+      }
+      #contactForm input[type="text"],
+      #contactForm input[type="tel"],
+      #contactForm textarea,
+      #contactForm input[type="email"] {
+        background-color: rgba(0, 0, 0, 0.1); 
+        border: 1px solid #ced4da; 
+        border-radius: 5px; 
+        padding: 10px; 
+        color: #495057; 
+        width: 100%; 
+        margin-bottom: 10px; 
+      }
+#campo
+      {
+        border-radius: 10px ;
       }

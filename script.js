@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
 document.addEventListener('DOMContentLoaded', function() {
   var myCarousel = document.getElementById('nosotros');
   var carousel = new bootstrap.Carousel(myCarousel, {
-    interval: 2000, 
+    interval: 10000, 
     pause: 'hover', 
   });
 });
@@ -41,6 +41,7 @@ window.addEventListener('scroll', function() {
     scrollBtn.style.display = 'none';
   }
 });
+
 
 
 function scrollToTop() {

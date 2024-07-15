@@ -37,7 +37,7 @@
             <a class="nav-link text-primary" href="#nosotros">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary" href="#footer">Contáctanos</a>
+            <a class="nav-link text-primary" href="#contactanos">Contáctanos</a>
           </li>
         </ul>
         <!-- switch de modo claro y oscuro -->
@@ -186,27 +186,26 @@
   <div class="carousel-inner">
     <div class="carousel-item active" style="background-image: url('img/mision.jpg');">
       <div class="container-fluid seccion nueva-seccion">
-        <h2>Misión</h2>
+        <h2 class="mision">Misión</h2>
         <p>En Master Tic's Soluciones Informáticas nos comprometemos a proporcionar servicios integrales y soluciones tecnológicas innovadoras que satisfagan las necesidades de nuestros clientes en videovigilancia, cableado estructurado, equipo de cómputo, puntos de venta y desarrollo web.</p>
       </div>
     </div>
     <div class="carousel-item" style="background-image: url('img/vision.png');">
       <div class="container-fluid seccion nueva-seccion">
-        <h2>Visión</h2>
+        <h2 class="vision">Visión</h2>
         <p>Nuestra visión en Master Tic's Soluciones Informáticas es convertirnos en líderes reconocidos a nivel nacional en el campo de las soluciones tecnológicas, siendo referentes en la excelencia del servicio y la innovación constante.</p>
       </div>
     </div>
     <div class="carousel-item" style="background-image: url('img/valores.png');">
       <div class="container-fluid seccion nueva-seccion">
-        <h2>Valores</h2>
+        <h2 class="valores">Valores</h2>
         <ul>
          <p> 
           Calidad y Excelencia: Nos esforzamos por ofrecer productos y servicios de la más alta calidad, garantizando la satisfacción total de nuestros clientes. <br>
           Integridad y Confianza: Operamos con transparencia y ética en todas nuestras relaciones comerciales y profesionales <br>
           Compromiso con el Cliente: Priorizamos las necesidades y expectativas de nuestros clientes, proporcionando soluciones personalizadas y un servicio excepcional. <br>
           Innovación Constante: Promovemos un ambiente de aprendizaje y mejora continua, fomentando la innovación en todos los aspectos de nuestro negocio. <br>
-          Adaptabilidad y Flexibilidad: Nos adaptamos rápidamente a los cambios del mercado y las tecnologías emergentes para mantenernos siempre relevantes y competitivos. <br>
-          Crecimiento Sostenible: Buscamos un crecimiento equilibrado y sostenible, asegurando la viabilidad a largo plazo de nuestra empresa y contribuyendo al desarrollo de la industria tecnológica. <br>
+          
           </p>
           </div>
         </ul>
@@ -226,14 +225,14 @@
 
   <!-- Sección Contáctanos -->
 
-  <div class="container text-white" >
+  <div class="container text-dark" >
     <div class="row">
       <div class="col-lg-2 col-md-1 col-sm-12"></div>
-      <div class="col-lg-8 col-md-10 col-sm-12 bg-primary my-5 text-center">
+      <div class="col-lg-8 col-md-10 bg-light col-sm-12 my-5 text-center" id="campo">
         <div id="contactanos" class="container-fluid seccion">
 
           <div id="contacto" class="container-fluid seccion">
-            <h2 class="mb-4 titulo">Contactanos</h2>
+            <h2 class="mb-4 titulo text-dark">Contactanos</h2>
             <form id="contactForm" action="mailto:puentestorresiancarlos@gmail.com" method="POST" enctype="text/plain">
               <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
@@ -251,11 +250,14 @@
                 <label for="empresa" class="form-label">Empresa</label>
                 <input type="text" class="form-control" id="empresa" name="empresa" required>
               </div>
+                <label for="asunto" class="form-label">Asunto</label>
+                <input type="text" class="form-control" id="asunto" name="asunto" required>
+              </div>
               <div class="mb-3">
                 <label for="mensaje" class="form-label">Detalles</label>
                 <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
               </div>
-              <button type="submit" class="btn btn-success">Enviar</button>
+              <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
           </div>
         </div>
@@ -270,14 +272,14 @@
 <footer id="footer" class="footer text-center" style="padding: 10px 0;">
   <div class="row">
     <div class="col-lg-4 text-center text-lg-start">
-      <p style="font-size: 1.5em; margin-top: 31px; margin-left: 40px;">Pabellón de Arteaga, AGS</p>
+      <p style="font-size: 1.5em; margin-top: 39px; margin-left: 40px;">Pabellón de Arteaga, AGS</p>
     </div>
     <div class="col-lg-4 text-center">
-      <p style="font-size: 1.1em; margin-top: 30px;">&copy; 2024 MasterTic's. Todos los derechos reservados.</p>
+      <p style="font-size: 1.1em; margin-top: 10px;">&copy; 2024 MasterTic's. Todos los derechos reservados.</p>
     </div>
     <div class="col-lg-4 text-lg-end">
       <div class="contact-info">
-        <p style="font-size: 0.9em;  margin-bottom: 5px; margin-right: 70px; margin-top: 30px;">Correo: mastertics5@gmail.com</p>
+        <p style="font-size: 0.9em;  margin-bottom: 5px; margin-right: 70px; margin-top: 45px;">Correo: mastertics5@gmail.com</p>
         <p style="font-size: 0.9em;  margin-bottom: 0; margin-right: 70px; margin-top:25px ;">Teléfono: 465 1053 77 63</p>
       </div>
     </div>
