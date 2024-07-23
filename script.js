@@ -35,7 +35,7 @@ window.addEventListener('load', function() {
 });
 window.addEventListener('scroll', function() {
   var scrollBtn = document.getElementById('scrollBtn');
-  if (document.documentElement.scrollTop > 100) {
+  if (document.documentElement.scrollTop > 4000) {
     scrollBtn.style.display = 'block';
   } else {
     scrollBtn.style.display = 'none';

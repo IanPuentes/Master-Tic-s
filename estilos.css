@@ -68,7 +68,7 @@ body{
         max-width: 80px; 
         height: auto;
       }
-      .banner-section {
+.banner-section {
         position: relative;
         z-index: 2; 
         background-color: rgba(255, 255, 255, 0.9); 
@@ -79,7 +79,7 @@ body{
         margin-top: 25px;
       }
       
-      .banner-item {
+.banner-item {
         height: 200px; 
         margin-bottom: 20px; 
         background-size: cover; 
@@ -214,4 +214,37 @@ body{
 #campo
       {
         border-radius: 10px ;
+      }
+#fondo{
+  background-color:#001f3f;
+margin-top: 30px;
+}
+
+.seccion-video {
+        background-color: #001f3f; /* Color de fondo deseado */
+        text-align: center;
+        padding: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        min-height: 720px;
+     
+      }
+
+.btn{
+  background-color: #1761B8;
+  color: #ffffff;
+}
+      .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* Proporción 16:9: 9 dividido por 16 multiplicado por 100 para obtener el porcentaje */
+        height: 0;
+        overflow: hidden;
+      }
+      
+      .video-wrapper video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
       }
